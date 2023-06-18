@@ -100,16 +100,45 @@ public class Patterns {
 //        }
 //
 //Print the pattern-Floyd's Pattern
+// 1
+// 23
+// 456
+// 78910
+// 1112131415
 
-        int n=5;
-        int number=1;
+//        int n=5;
+//        int number=1;
+//
+//        for(int i=1;i<=n;i++){
+//
+//            for(int j=1;j<=i;j++){
+//
+//                System.out.print(number + " ");
+//                number=number+1;//number++
+//            }
+//            System.out.println();
+//        }
 
-        for(int i=1;i<=n;i++){
+// Print the pattern- 0 1 Triangle
+// 1
+// 0 1
+// 1 0 1
+// 0 1 0 1
+//1 0 1 0 1
 
-            for(int j=1;j<=i;j++){
+        int n = 5;
 
-                System.out.print(number + " ");
-                number=number+1;//number++
+//outer loop tells how many rows are there
+        for(int i=1;i<=n;i++)
+        {
+            for( int j=1;j<=i;j++){
+                int sum=i+j;
+                if(sum % 2 == 0) {//even
+                    System.out.print("1 ");
+                }
+                else {
+                    System.out.print("0 ");//odd
+                }
             }
             System.out.println();
         }
