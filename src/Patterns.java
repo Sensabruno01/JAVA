@@ -89,18 +89,29 @@ public class Patterns {
 
 //Print the pattern-inverted half pyramid with numbers
 
+//        int n=5;
+//        for (int i=1;i<=n;i++){
+//
+//            for(int j=1;j<=n-i+1;j++)
+//            {
+//                System.out.print(j);
+//            }
+//                   System.out.println();
+//        }
+//
+//Print the pattern-Floyd's Pattern
+
         int n=5;
-        for (int i=1;i<=n;i++){
+        int number=1;
 
-            for(int j=1;j<=n-i+1;j++)
-            {
-                System.out.print(j);
+        for(int i=1;i<=n;i++){
+
+            for(int j=1;j<=i;j++){
+
+                System.out.print(number + " ");
+                number=number+1;//number++
             }
-                   System.out.println();
+            System.out.println();
         }
-
-
-
-
     }
 }
