@@ -5,48 +5,67 @@ public class Advanced_Patterns {
     public static  void main(String args[]){
 
         //Print butterfly pattern
+//
+//        int n = 4;
+//        //upper half
+//        for(int i=1; i<=n; i++)
+//        {
+//            //first part
+//            for(int j=1;j<=i;j++) {
+//                System.out.print("*");
+//            }
+//            //Spaces
+//            int spaces = 2 * (n-i);
+//            for (int j=1;j<=spaces;j++){
+//                System.out.print(" ");
+//            }
+//
+//            //2nd part
+//
+//            for (int j=1;j<=i;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//
+//        //lower half
+//
+//        for(int i=n; i>=1; i--)
+//        {
+//            //first part
+//            for(int j=1;j<=i;j++) {
+//                System.out.print("*");
+//            }
+//            //Spaces
+//            int spaces = 2 * (n-i);
+//            for (int j=1;j<=spaces;j++){
+//                System.out.print(" ");
+//            }
+//
+//            //2nd part
+//
+//            for (int j=1;j<=i;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
 
-        int n = 4;
-        //upper half
-        for(int i=1; i<=n; i++)
-        {
-            //first part
-            for(int j=1;j<=i;j++) {
-                System.out.print("*");
-            }
-            //Spaces
-            int spaces = 2 * (n-i);
-            for (int j=1;j<=spaces;j++){
+
+
+// Print the pattern-solid rhombus
+
+        int n =5;
+
+        for(int i=1;i<=n;i++){
+            //Printing space
+            for (int j=1;j<=n-i;j++){
                 System.out.print(" ");
             }
-
-            //2nd part
-
-            for (int j=1;j<=i;j++){
+            //Printing star
+            for(int j=1;j<=5;j++){
                 System.out.print("*");
             }
-            System.out.println();
-        }
 
-        //lower half
-
-        for(int i=n; i>=1; i--)
-        {
-            //first part
-            for(int j=1;j<=i;j++) {
-                System.out.print("*");
-            }
-            //Spaces
-            int spaces = 2 * (n-i);
-            for (int j=1;j<=spaces;j++){
-                System.out.print(" ");
-            }
-
-            //2nd part
-
-            for (int j=1;j<=i;j++){
-                System.out.print("*");
-            }
             System.out.println();
         }
 
