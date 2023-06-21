@@ -20,21 +20,41 @@ public class Functions {
 //    }
 
     //Make a function to add two numbers
-    public static int addTwoNumbers(int a,int b)
-    {
-         int sum;
-         sum=a+b;
-         return sum;
+//    public static int addTwoNumbers(int a,int b)
+//    {
+//         int sum;
+//         sum=a+b;
+//         return sum;
+//    }
+//
+//
+//     public static void main(String[] args)
+//     {
+//         Scanner input=new  Scanner(System.in);
+//         int a = input.nextInt();
+//         int b = input.nextInt();
+//
+//         int sum = addTwoNumbers(a,b);
+//         System.out.println(sum);
+//     }
+
+    //Make a function to multiply two numbers and return the product.
+
+    public static double productOfTwoNumbers(double a,double b){
+        double product;
+        product=a*b;
+        return product;
+
     }
 
+    public static  void main(String[] args)
+    {
+      Scanner input=new Scanner(System.in);
+      int a=input.nextInt();
+      int b=input.nextInt();
 
-     public static void main(String[] args)
-     {
-         Scanner input=new  Scanner(System.in);
-         int a = input.nextInt();
-         int b = input.nextInt();
+      double product =productOfTwoNumbers(a,b);
+        System.out.println("Product of the two numbers are:"+product);
 
-         int sum = addTwoNumbers(a,b);
-         System.out.println(sum);
-     }
+    }
 }
