@@ -152,6 +152,7 @@ public class Advanced_Patterns {
 //            }
 //            System.out.println();
 //        }
+
 //        //Lower half
 //        for(int i=n;i>=1;i--)
 //        {
