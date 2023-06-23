@@ -65,31 +65,50 @@ public class Functions {
     //4!=4*3*2*1=24   ----------->loop
     //5!=120
 
-    public static void printFactorial(int n)
+//    public static void printFactorial(int n)
+//    {
+//        if(n>=0)
+//        {
+//            //loop
+//            int factorial = 1;
+//            for (int i = n; i >= 1; i--)
+//            {
+//                factorial = factorial * i;
+//            }
+//            System.out.println(factorial);
+//            return;
+//        }
+//        else
+//        {
+//            System.out.println("No factorial for negative number");
+//        }
+//    }
+//
+//    public static void main(String[] args)
+//    {
+//        Scanner input = new Scanner(System.in);
+//        int n = input.nextInt();
+//
+//        printFactorial(n);
+//    }
+
+// Write a function that takes in the radius as input and returns the circumference of a circle.
+
+   public static double circumference(double r)
     {
-        if(n>=0)
-        {
-            //loop
-            int factorial = 1;
-            for (int i = n; i >= 1; i--)
-            {
-                factorial = factorial * i;
-            }
-            System.out.println(factorial);
-            return;
-        }
-        else
-        {
-            System.out.println("No factorial for negative number");
-        }
+     double circumference= 2 * 3.14 * r;
+     return circumference;
     }
 
-    public static void main(String[] args)
-    {
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
+   public static  void main (String args[])
+   {
+    Scanner input=new Scanner(System.in);
+    System.out.println("Enter the radius:");
+    double r = input.nextDouble();
 
-        printFactorial(n);
-    }
+   double result=circumference(r);
+   System.out.println("Circumference of circle is "+result);
+
+   }
 
 }
