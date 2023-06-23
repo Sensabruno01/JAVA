@@ -40,21 +40,56 @@ public class Functions {
 
     //Make a function to multiply two numbers and return the product.
 
-    public static double productOfTwoNumbers(double a,double b){
-        double product;
-        product=a*b;
-        return product;
+//    public static double productOfTwoNumbers(double a,double b)
+//    {
+//        double product;
+//        product=a*b;
+//        return product;
+//
+//    }
+//
+//    public static  void main(String[] args)
+//    {
+//      Scanner input=new Scanner(System.in);
+//      int a=input.nextInt();
+//      int b=input.nextInt();
+//
+//      double product =productOfTwoNumbers(a,b);
+//      System.out.println("Product of the two numbers are:"+product);
+//
+//    }
+    //Find the factorial of number-0!=1,no factorial of negative numbers
+    //1!=1
+    //2!=2*1
+    //3!=3*2*1=
+    //4!=4*3*2*1=24   ----------->loop
+    //5!=120
 
-    }
-
-    public static  void main(String[] args)
+    public static void printFactorial(int n)
     {
-      Scanner input=new Scanner(System.in);
-      int a=input.nextInt();
-      int b=input.nextInt();
-
-      double product =productOfTwoNumbers(a,b);
-        System.out.println("Product of the two numbers are:"+product);
-
+        if(n>=0)
+        {
+            //loop
+            int factorial = 1;
+            for (int i = n; i >= 1; i--)
+            {
+                factorial = factorial * i;
+            }
+            System.out.println(factorial);
+            return;
+        }
+        else
+        {
+            System.out.println("No factorial for negative number");
+        }
     }
+
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+
+        printFactorial(n);
+    }
+
 }
