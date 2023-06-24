@@ -112,27 +112,55 @@ public class Functions {
 //   }
 //Write a function to print the sum of all odd numbers from 1 to n.
 
-    public static int sumOfOddNumbers(int n)
+//    public static int sumOfOddNumbers(int n)
+//    {
+//        int sum = 0;
+//        for (int i = 1; i <= n; i++)
+//        {
+//            if(i%2 == 1)
+//            {
+//                sum = sum + i;
+//            }
+//
+//        }
+//        return sum;
+//    }
+//
+//    public static void main(String[] args)
+//    {
+//        Scanner input=new Scanner(System.in);
+//        System.out.println("Enter the number");
+//        int n = input.nextInt();
+//        int result = sumOfOddNumbers(n);
+//        System.out.println("The sum of odd numbers till n is " + result);
+//
+//    }
+// Write a function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote.
+
+    public static int Vote(int age)
     {
-        int sum = 0;
-        for (int i = 1; i <= n; i++)
+        if(age>18)
         {
-            if(i%2 == 1)
-            {
-                sum = sum + i;
-            }
-
+            System.out.println("Eligible to vote");
+            return age;
         }
-        return sum;
+        else
+        {
+            System.out.println("Not eligible");
+            return age;
+        }
+
     }
 
-    public static void main(String[] args)
+
+
+
+    public static void main(String args[])
     {
-        Scanner input=new Scanner(System.in);
-        System.out.println("Enter the number");
-        int n = input.nextInt();
-        int result = sumOfOddNumbers(n);
-        System.out.println("The sum of odd numbers till n is " + result);
+        Scanner input = new Scanner(System.in);
+        int age=input.nextInt();
+        int result=Vote(age);
 
     }
+
 }
