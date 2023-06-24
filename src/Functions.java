@@ -168,14 +168,14 @@ public class Functions {
 
     public  static  int power(int num, int exponent)
     {
-       int power=1;
+       int a=1;
         for(int i =1;i<=exponent;i++)
         {
-            System.out.println(i);
-               power=power*num;
+
+               a=a*num;
 
         }
-        return power;
+        return a;
     }
 
 
