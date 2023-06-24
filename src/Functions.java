@@ -94,21 +94,45 @@ public class Functions {
 
 // Write a function that takes in the radius as input and returns the circumference of a circle.
 
-   public static double circumference(double r)
+//   public static double circumference(double r)
+//    {
+//     double circumference= 2 * 3.14 * r;
+//     return circumference;
+//    }
+//
+//   public static  void main (String args[])
+//   {
+//    Scanner input=new Scanner(System.in);
+//    System.out.println("Enter the radius:");
+//    double r = input.nextDouble();
+//
+//   double result=circumference(r);
+//   System.out.println("Circumference of circle is "+result);
+//
+//   }
+//Write a function to print the sum of all odd numbers from 1 to n.
+
+    public static int sumOfOddNumbers(int n)
     {
-     double circumference= 2 * 3.14 * r;
-     return circumference;
+        int sum = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            if(i%2 == 1)
+            {
+                sum = sum + i;
+            }
+
+        }
+        return sum;
     }
 
-   public static  void main (String args[])
-   {
-    Scanner input=new Scanner(System.in);
-    System.out.println("Enter the radius:");
-    double r = input.nextDouble();
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n = input.nextInt();
+        int result = sumOfOddNumbers(n);
+        System.out.println("The sum of odd numbers till n is " + result);
 
-   double result=circumference(r);
-   System.out.println("Circumference of circle is "+result);
-
-   }
-
+    }
 }
