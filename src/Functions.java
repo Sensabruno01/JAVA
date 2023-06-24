@@ -137,29 +137,60 @@ public class Functions {
 //    }
 // Write a function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote.
 
-    public static int Vote(int age)
-    {
-        if(age>18)
-        {
-            System.out.println("Eligible to vote");
-            return age;
-        }
-        else
-        {
-            System.out.println("Not eligible");
-            return age;
-        }
+//    public static int Vote(int age)
+//    {
+//        if(age>18)
+//        {
+//            System.out.println("Eligible to vote");
+//            return age;
+//        }
+//        else
+//        {
+//            System.out.println("Not eligible");
+//            return age;
+//        }
+//
+//    }
+//
+//
+//
+//
+//    public static void main(String args[])
+//    {
+//        Scanner input = new Scanner(System.in);
+//        int age=input.nextInt();
+//        int result=Vote(age);
+//
+//    }
 
+    //Two numbers are entered by the user, x and n.
+    // Write a function to find the value of one number raised to the power of another i.e. xn.
+
+    public  static  int power(int num, int exponent)
+    {
+       int power=1;
+        for(int i =1;i<=exponent;i++)
+        {
+            System.out.println(i);
+               power=power*num;
+
+        }
+        return power;
     }
 
 
 
-
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
-        int age=input.nextInt();
-        int result=Vote(age);
+        System.out.println("Enter the number: ");
+        int num = input.nextInt();
+        System.out.println("Enter the power: ");
+        int exponent = input.nextInt();
+
+
+       int result=power(num,exponent);
+        System.out.println(result);
+
 
     }
 
