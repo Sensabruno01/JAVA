@@ -46,6 +46,35 @@ public class Arrays {
 
         //2-D arrays
 
+//        Scanner input=new Scanner(System.in);
+//        System.out.println("Enter the size of rows:");
+//        int rows = input.nextInt();
+//        System.out.println("Enter the size of columns:");
+//        int column = input.nextInt();
+//
+//        int[][] numbers= new int[rows][column];
+//
+//        //Nested loop for taking input
+//
+//        for(int i=0;i<rows;i++)
+//        { //Outer loop
+//            for(int j=0;j<column;j++)
+//            { //inner loop for columns
+//                numbers[i][j] = input.nextInt();
+//            }
+//        }
+//
+//        //Nested loop for printing the output
+//        for(int i =0;i<rows;i++)
+//        {
+//            for(int j = 0;j<column;j++)
+//            {
+//                System.out.print(numbers[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+
+        //Take input
         Scanner input=new Scanner(System.in);
         System.out.println("Enter the size of rows:");
         int rows = input.nextInt();
@@ -54,27 +83,28 @@ public class Arrays {
 
         int[][] numbers= new int[rows][column];
 
-        //Nested loop for taking input
-
         for(int i=0;i<rows;i++)
-        { //Outer loop
+        {
             for(int j=0;j<column;j++)
-            { //inner loop for columns
+            {
                 numbers[i][j] = input.nextInt();
             }
         }
-
-        //Nested loop for printing the output
-        for(int i =0;i<rows;i++)
+        System.out.println("Enter number:");
+        int x = input.nextInt();
+        for(int i=0;i<rows;i++)
         {
-            for(int j = 0;j<column;j++)
+            for(int j=0;j<column;j++)
             {
-                System.out.print(numbers[i][j] + " ");
+                if(numbers[i][j]==x)
+                {
+                    System.out.println("The number is at index: "+i+ " "+ j);
+                }
             }
-            System.out.println();
         }
 
     }
+
 
 
 }
