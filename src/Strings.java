@@ -16,10 +16,10 @@ public class Strings {
 
         //Concatenation
 
-        String fname="Tony";
-        String lname="Stark";
-        String fullname=fname + " "+ lname ;
-        System.out.println(fullname);
+//        String fname="Tony";
+//        String lname="Stark";
+//        String fullname=fname + " "+ lname ;
+//        System.out.println(fullname);
 //        System.out.println(fullname.length());
 //Going through each character of the string
 //        for(int i = 0;i<fullname.length();i++){
@@ -49,5 +49,12 @@ public class Strings {
 //            System.out.println("Not equal");
 //        }
 
+
+        //sub strings
+//        String sentence = "My name is Tony";
+//        String name= sentence.substring(11,sentence.length());
+//        String name = sentence.substring(3);
+//        System.out.println(name);
+        //Strings are immutable
     }
 }
