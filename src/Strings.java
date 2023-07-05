@@ -56,5 +56,39 @@ public class Strings {
 //        String name = sentence.substring(3);
 //        System.out.println(name);
         //Strings are immutable
+        //StringBuilder
+
+        StringBuilder sb = new StringBuilder("Sensa");
+        System.out.println(sb);
+
+        //To take character at index 0
+//        System.out.println(sb.charAt(0));
+
+        //Set char at index function
+//        sb.setCharAt(0,'P');
+//        System.out.println(sb);
+
+//        To insert a character 'P'.---Sensa becomes PSensa
+
+//        sb.insert(0,'P');
+//        System.out.println(sb);
+
+        //To delete a char or susbtring.
+
+//        sb.delete(1,3);
+//        System.out.println(sb);
+
+        //append function
+
+        sb.append(" B"); // sb = sb + "B";
+        sb.append("r");
+        sb.append("u");
+        sb.append("n");
+        sb.append("o");
+        System.out.println(sb);
+
+        //to print length
+        System.out.println(sb.length());
+
     }
 }
